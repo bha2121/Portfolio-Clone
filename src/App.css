@@ -1,33 +1,197 @@
-.App {
-  text-align: center;
+header {
+  height: 100vh;
+  width: 100%;
+  background-image: url("https://wallpapercave.com/wp/CsOiC7X.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  padding: 25px 16px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.title {
+  color: #FED136;
+  font-family: 'Kaushan Script', sans-serif;
+  font-size: 1.75em;
+  margin: 0 16px 0 0;
+  padding: 5px 0;
+}
+
+ul {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 90%;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #fff;
+  text-transform: uppercase;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  padding: 0 15px;
+  margin: 0 67px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links > li {
+  padding: 0 .75em;
+}
+
+.nav-links > li:hover {
+  color: #FEC503;
+}
+
+
+.nav-menu {
+  display: none;
+  width: 100%;
+  position: fixed;
+  top: 50px;
+  padding-left: 30px;
+  background: #212529;
+  transition: 2s;
+}
+
+.nav-button {
+  display: none;
+  width: 79px;
+  height: 38px;
+  font-size: 12px;
+  padding: 13px;
+  text-transform: uppercase;
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+  background: #fed136;
+  font-family: 'Montserrat', sans-serif;
+  margin-right: 30px;
+}
+
+.nav-menu-show {
+  display: block;
+}
+
+.nav-list {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 0;
+  margin: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-list > li {
+  font-size: 90%;
+  font-weight: 400;
+  padding: .75em 0;
+  letter-spacing: 1px;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.header-container {
+  height: 30vh;
+  width: 100%;
+  padding-top: 300px;
+  padding-bottom: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.welcome {
+  color: #fff;
+  text-align: center;
+  margin: 0 auto 25px;
+  font-size: 40px;
+  font-style: italic;
+}
+
+.meet-you {
+  color: #fff;
+  text-align: center;
+  margin: 0 auto 50px;
+  font-size: 75px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.contact {
+  color: #fff;
+  text-align: center;
+  margin: auto;
+  text-transform: uppercase;
+  background: #fed136;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  padding: 20px 40px;
+}
+
+section {
+  color: ivory;
+  width: 100%;
+  height: 2000px;
+}
+
+
+@media(max-width: 574px) {
+  nav {
+    background: #212529;
+    padding: 8px 16px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .nav-links {
+    display: none;
   }
+
+  .nav-button {
+    display: block;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  header {
+    height: 63vh;
+  }
+
+  .header-container {
+    padding-top: 150px;
+    padding-bottom: 100px;
+  }
+
+  .welcome {
+    font-size: 22px;
+    margin-bottom: 25px;
+  }
+
+  .meet-you {
+    font-size: 50px;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
 }
